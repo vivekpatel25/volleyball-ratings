@@ -1,12 +1,24 @@
 import pandas as pd
 import streamlit as st
+from datetime import date
 
 # --- Page setup ---
 st.set_page_config(page_title="ACAC Volleyball 2025-26 Ratings", layout="wide")
 
-# --- Header ---
-st.title("🏐 ACAC Volleyball 2025-26 Ratings")
-st.markdown("### O-Rtg (Offense), D-Rtg (Defense), T-Rtg (Total) Leaderboards")
+# --- Header Section ---
+st.markdown("""
+# 🏐 The Best ACAC Volleyball Players by Rating (2025-26)
+
+*Updated weekly — last update:* **{today}**
+
+These ratings combine offensive, defensive, and total impact metrics.
+O-Rtg measures scoring contribution, D-Rtg measures defensive control,
+and T-Rtg represents the overall player impact.
+""".format(today=date.today().strftime("%a %b %d %Y")))
+
+st.markdown("### Click any column header (O-Rtg, D-Rtg, or T-Rtg) to sort interactively.")
+
+st.markdown("---")
 
 # --- Load data ---
 try:
@@ -37,19 +49,12 @@ women = women.sort_values("T-Rtg", ascending=False).head(20)
 tab1, tab2 = st.tabs(["Men", "Women"])
 
 with tab1:
-    st.subheader("Men's Leaderboard (Top 20)")
-    st.dataframe(
-        men,
-        use_container_width=True,
-        hide_index=True
-    )
-    st.caption("Click any column header (O-Rtg, D-Rtg, or T-Rtg) to sort interactively.")
+    st.subheader("Men's Leaderboard — Top 20")
+    st.dataframe(men, use_container_width=True, hide_index=True)
 
 with tab2:
-    st.subheader("Women's Leaderboard (Top 20)")
-    st.dataframe(
-        women,
-        use_container_width=True,
-        hide_index=True
-    )
-    st.caption("Click any column header (O-Rtg, D-Rtg, or T-Rtg) to sort interactively.")
+    st.subheader("Women's Leaderboard — Top 20")
+    st.dataframe(women, use_container_width=True, hide_index=True)
+
+st.markdown("---")
+st.caption("© 2025 ACAC Volleyball Ratings — Created by Vivek Patel | Data refreshed weekly")
