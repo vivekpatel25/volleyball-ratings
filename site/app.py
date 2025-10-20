@@ -37,10 +37,14 @@ st.markdown(f"""
 
 # ---------- INTRO ----------
 st.markdown("""
-### 📊 About These Ratings
-Each player’s **Total Rating (T-Rtg)** combines both offensive contribution and defensive control impact per set.  
----
-""")
+<h3 style="display:flex;align-items:center;">
+  📊&nbsp;About These Ratings
+</h3>
+<p style="font-size:1.05rem; color:#444; margin-top:-0.2rem;">
+  Each player’s <b>Total Rating (T-Rtg)</b> combines both offensive contribution and defensive control impact per set.
+</p>
+<hr style="margin-top:0.8rem; margin-bottom:1.2rem; border: none; border-top: 1px solid #ddd;">
+""", unsafe_allow_html=True)
 
 # ---------- LOAD LEADERBOARDS ----------
 @st.cache_data
