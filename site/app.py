@@ -105,7 +105,7 @@ def render_table(df):
         else:
             df[f"_{col}_norm"] = 0.0
 
-    headers = ["Player", "Team", "SP", "O-Rtg", "D-Rtg", "T-Rtg"]
+    headers = ["Jersey", "Player", "Team", "SP", "O-Rtg", "D-Rtg", "T-Rtg"]
     html = f"""
     <div style="overflow-x:auto;margin:0;padding:0;">
       <table style="width:100%;border-collapse:collapse;font-size:16px;
@@ -114,7 +114,8 @@ def render_table(df):
         <thead><tr style="background:{header_bg};color:{text_color};">
     """
     for i, col in enumerate(headers):
-        cursor = "pointer" if col in ["SP","O-Rtg","D-Rtg","T-Rtg"] else "default"
+        # Only SP, O-Rtg, D-Rtg, T-Rtg sortable
+        cursor = "pointer" if col in ["SP", "O-Rtg", "D-Rtg", "T-Rtg"] else "default"
         html += (
             f"<th onclick='sortTable({i})' style='border:1px solid {border_color};white-space:nowrap;"
             f"cursor:{cursor};padding:8px 10px;'>{col} ⬍</th>"
@@ -156,9 +157,9 @@ for tab, gender in zip(tabs, ["men", "women"]):
             st.info(f"No leaderboard yet for {gender}.")
             continue
 
-        col_map = {c: c for c in df.columns}
         df = df.rename(columns=str.strip)
         df = df.rename(columns={
+            next((c for c in df.columns if "jersey" in c.lower()), "Jersey"): "Jersey",
             next((c for c in df.columns if "player" in c.lower()), "Player"): "Player",
             next((c for c in df.columns if "team" in c.lower()), "Team"): "Team",
             next((c for c in df.columns if "sp" in c.lower()), "SP"): "SP",
@@ -166,7 +167,8 @@ for tab, gender in zip(tabs, ["men", "women"]):
             next((c for c in df.columns if "d-rtg" in c.lower()), "D-Rtg"): "D-Rtg",
             next((c for c in df.columns if "t-rtg" in c.lower()), "T-Rtg"): "T-Rtg",
         })
-        keep = [c for c in ["Player","Team","SP","O-Rtg","D-Rtg","T-Rtg"] if c in df.columns]
+
+        keep = [c for c in ["Jersey","Player","Team","SP","O-Rtg","D-Rtg","T-Rtg"] if c in df.columns]
         df = df[keep].copy()
 
         for c in ["O-Rtg","D-Rtg","T-Rtg"]:
