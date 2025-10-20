@@ -3,14 +3,51 @@ import os
 from glob import glob
 
 # ========== CONFIGURATION ==========
-BOX_PATH = "data/boxscores/"
+BOX_PATH_MEN = "data/boxscores/men/"
+BOX_PATH_WOMEN = "data/boxscores/women/"
 ROSTER_MEN = "data/roster_men_25-26.csv"
 ROSTER_WOMEN = "data/roster_women_25-26.csv"
 OUT_MEN = "data/leaderboard_men_2025.csv"
 OUT_WOMEN = "data/leaderboard_women_2025.csv"
 
-# ========== FORMULAS ==========
-def compute_ratings(df: pd.DataFrame) -> pd.DataFrame:
+# ========== HELPER FUNCTIONS ==========
+def rename_columns(df):
+    """Rename columns from raw boxscore headers to standard names."""
+    mapping = {
+        "player_name": "Player",
+        "team_name": "Team",
+        "jersey_no": "Jersey",
+        "sets_played": "SP",
+        "attack_kills": "K",
+        "attack_errors": "E",
+        "attack_total_attempts": "TA",
+        "setting_assists": "A",
+        "serve_aces": "SA",
+        "serve_errors": "SE",
+        "reception_erros": "RE",
+        "digs": "DIGS",
+        "block_single": "BS",
+        "block_assists": "BA",
+        "block_errors": "BE",
+        "ball_handling_errors": "BHE"
+    }
+    df = df.rename(columns={c: mapping.get(c.lower().strip(), c) for c in df.columns})
+    return df
+
+
+def clean_player_names(df):
+    """Remove asterisk (*) and extra spaces from player names."""
+    if "Player" in df.columns:
+        df["Player"] = (
+            df["Player"]
+            .astype(str)
+            .str.replace("*", "", regex=False)
+            .str.strip()
+        )
+    return df
+
+
+def compute_ratings(df):
     """Compute O-Rtg, D-Rtg, and T-Rtg for each player."""
     df["O-Rtg"] = ((df["K"] - df["E"]) +
                    (df["SA"] - df["SE"]) +
@@ -24,60 +61,52 @@ def compute_ratings(df: pd.DataFrame) -> pd.DataFrame:
     return df
 
 
-def combine_boxscores(folder: str) -> pd.DataFrame:
-    """Read all team boxscores and combine season totals."""
-    all_files = glob(os.path.join(folder, "*.csv"))
-    if not all_files:
+def combine_boxscores(folder):
+    """Combine all team boxscores in a folder into season totals."""
+    files = glob(os.path.join(folder, "*.csv"))
+    if not files:
         print(f"⚠️ No boxscore files found in {folder}")
         return pd.DataFrame()
 
-    dfs = []
-    for f in all_files:
+    df_list = []
+    for f in files:
         try:
             temp = pd.read_csv(f)
-            temp["source_file"] = os.path.basename(f)
-            dfs.append(temp)
+            temp = rename_columns(temp)
+            temp = clean_player_names(temp)
+            df_list.append(temp)
         except Exception as e:
             print(f"❌ Error reading {f}: {e}")
 
-    if not dfs:
-        print("⚠️ No valid boxscore data found.")
-        return pd.DataFrame()
+    df = pd.concat(df_list, ignore_index=True)
 
-    df = pd.concat(dfs, ignore_index=True)
-
-    # Standardize columns
-    df.columns = [c.strip().upper() for c in df.columns]
-    required_cols = ["PLAYER", "TEAM", "SP","K","E","TA","A","SA","SE","RE",
-                     "DIGS","BS","BA","BE","BHE","PTS"]
-    missing = [c for c in required_cols if c not in df.columns]
-    if missing:
-        print(f"⚠️ Missing columns in some files: {missing}")
+    # Convert numeric columns safely
+    num_cols = ["SP","K","E","TA","A","SA","SE","RE","DIGS","BS","BA","BE","BHE"]
+    for col in num_cols:
+        if col in df.columns:
+            df[col] = pd.to_numeric(df[col], errors="coerce").fillna(0)
 
     # Group by player + team for cumulative totals
-    agg_dict = {c: "sum" for c in required_cols if c not in ["PLAYER","TEAM"]}
-    df = df.groupby(["PLAYER", "TEAM"], as_index=False).agg(agg_dict)
+    df = df.groupby(["Player", "Team"], as_index=False).sum(numeric_only=True)
     return df
 
 
-def merge_roster_stats(stats_df: pd.DataFrame, roster_path: str, gender: str) -> pd.DataFrame:
-    """Merge cumulative stats with roster (adds Player_ID, Jersey) and warn on mismatches."""
-    if stats_df.empty:
+def merge_with_roster(df, roster_path, gender):
+    """Merge stats with roster and warn if missing."""
+    if df.empty:
         return pd.DataFrame()
 
     try:
         roster = pd.read_csv(roster_path)
     except Exception as e:
         print(f"❌ Error reading roster {roster_path}: {e}")
-        return stats_df
+        return df
 
-    roster.columns = [c.strip().title() for c in roster.columns]
-    stats_df.columns = [c.strip().title() for c in stats_df.columns]
+    roster = clean_player_names(roster)
 
-    merged = stats_df.merge(roster, on=["Player", "Team"], how="left")
+    merged = df.merge(roster, on=["Player", "Team"], how="left")
 
-    # Warn if any player not found in roster
-    missing = merged[merged["Player_Id"].isna()][["Player", "Team"]]
+    missing = merged[merged["Player_ID"].isna()][["Player", "Team"]]
     if not missing.empty:
         print(f"⚠️ {len(missing)} {gender} players not found in roster:")
         for _, row in missing.iterrows():
@@ -91,17 +120,17 @@ if __name__ == "__main__":
     print("\n🏐 Updating Volleyball Ratings...\n")
 
     # --- MEN ---
-    men_df = combine_boxscores(BOX_PATH)
+    men_df = combine_boxscores(BOX_PATH_MEN)
     men_rtg = compute_ratings(men_df)
-    men_merged = merge_roster_stats(men_rtg, ROSTER_MEN, "men")
-    men_merged.to_csv(OUT_MEN, index=False)
+    men_final = merge_with_roster(men_rtg, ROSTER_MEN, "men")
+    men_final.to_csv(OUT_MEN, index=False)
     print(f"✅ Men's leaderboard saved → {OUT_MEN}\n")
 
     # --- WOMEN ---
-    women_df = combine_boxscores(BOX_PATH)
+    women_df = combine_boxscores(BOX_PATH_WOMEN)
     women_rtg = compute_ratings(women_df)
-    women_merged = merge_roster_stats(women_rtg, ROSTER_WOMEN, "women")
-    women_merged.to_csv(OUT_WOMEN, index=False)
+    women_final = merge_with_roster(women_rtg, ROSTER_WOMEN, "women")
+    women_final.to_csv(OUT_WOMEN, index=False)
     print(f"✅ Women's leaderboard saved → {OUT_WOMEN}\n")
 
     print("🎯 Update complete — all ratings recalculated season-to-date.\n")
