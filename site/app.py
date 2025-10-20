@@ -6,18 +6,17 @@ from datetime import date
 st.set_page_config(page_title="ACAC Volleyball 2025-26 Ratings", layout="wide")
 
 # --- Header Section ---
-st.markdown("""
+st.markdown(f"""
 # 🏐 The Best ACAC Volleyball Players by Rating (2025-26)
 
-*Updated weekly — last update:* **{today}**
+*Updated weekly — last update:* **{date.today().strftime("%a %b %d %Y")}**
 
 These ratings combine offensive, defensive, and total impact metrics.
 O-Rtg measures scoring contribution, D-Rtg measures defensive control,
-and T-Rtg represents the overall player impact.
-""".format(today=date.today().strftime("%a %b %d %Y")))
+and T-Rtg represents the overall player impact per set.
+""")
 
-st.markdown("### Click any column header (O-Rtg, D-Rtg, or T-Rtg) to sort interactively.")
-
+st.markdown("### Click any column header (SP, O-Rtg, D-Rtg, or T-Rtg) to sort interactively.")
 st.markdown("---")
 
 # --- Load data ---
@@ -29,7 +28,7 @@ except Exception as e:
     st.stop()
 
 # --- Columns to display ---
-cols = ["Player", "Team", "O-Rtg", "D-Rtg", "T-Rtg"]
+cols = ["Player", "Team", "SP", "O-Rtg", "D-Rtg", "T-Rtg"]
 
 # --- Prepare Men Data ---
 if all(c in men.columns for c in cols):
