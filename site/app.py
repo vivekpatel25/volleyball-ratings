@@ -38,10 +38,7 @@ st.markdown(f"""
 # ---------- INTRO ----------
 st.markdown("""
 ### 📊 About These Ratings
-Each player’s **Total Rating (T-Rtg)** combines both offensive and defensive impact per set.  
-- **O-Rtg:** Offensive contribution (kills – errors + serve + assists)  
-- **D-Rtg:** Defensive control (digs + blocks – reception errors)  
-- **T-Rtg:** Combined overall impact per set  
+Each player’s **Total Rating (T-Rtg)** combines both offensive contribution and defensive control impact per set.  
 ---
 """)
 
