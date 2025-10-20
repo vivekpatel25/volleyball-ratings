@@ -1,0 +1,26 @@
+game_id,team_name,jersey_no,player_name,sets_played,attack_kills,attack_errors,attack_total_attempts,attack_k%,setting_assists,serve_aces,serve_errors,reception_erros,digs,block_single,block_assists,block_errors,ball_handling_errors,
+2025_10_18_RDPvUAA,RDP,1,Zachary Neufeld,3,2,1,5,0.2,0,1,0,0,4,0,0,0,0,3
+2025_10_18_RDPvUAA,RDP,3,Colby Nemeth *,3,9,4,24,0.208,0,0,3,0,5,2,0,0,0,11
+2025_10_18_RDPvUAA,RDP,4,Wizdom Smith,1,2,0,2,1,0,0,1,0,0,0,0,0,0,2
+2025_10_18_RDPvUAA,RDP,5,Jay Trowbridge,1,0,0,0,0,0,1,0,0,1,0,0,0,0,1
+2025_10_18_RDPvUAA,RDP,6,Gavin Kelly,1,1,0,1,1,1,0,0,0,0,0,0,0,0,1
+2025_10_18_RDPvUAA,RDP,7,Liam Hartt,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025_10_18_RDPvUAA,RDP,8,Dante Furlan *,2,1,0,6,0.167,0,0,2,0,3,0,0,0,0,1
+2025_10_18_RDPvUAA,RDP,9,Brett Lower *,3,8,3,18,0.278,0,0,0,0,1,1,0,0,0,9
+2025_10_18_RDPvUAA,RDP,10,Bradley Noskey,3,0,0,0,0,0,0,0,0,6,0,0,0,0,0
+2025_10_18_RDPvUAA,RDP,12,Netana Samia *,3,1,0,2,0.5,20,0,2,0,5,0,0,0,0,1
+2025_10_18_RDPvUAA,RDP,15,Evan Ockerman *,3,1,0,2,0.5,2,1,1,0,3,4,0,0,0,6
+2025_10_18_RDPvUAA,RDP,16,Rylan Teasdale *,3,5,1,8,0.5,1,0,1,0,0,6,0,0,0,11
+2025_10_18_RDPvUAA,UAA,1,Robbie Taylor,2,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+2025_10_18_RDPvUAA,UAA,2,Jack Hoebers,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025_10_18_RDPvUAA,UAA,3,Jake Popowich,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025_10_18_RDPvUAA,UAA,4,Aiden Peake,1,1,0,2,0.5,0,0,1,0,0,0,0,0,0,1
+2025_10_18_RDPvUAA,UAA,5,Rylan Kelndorfer *,3,4,2,11,0.182,0,1,1,0,3,0,0,0,0,5
+2025_10_18_RDPvUAA,UAA,7,Sean Kaliel *,3,6,0,11,0.545,0,0,1,0,4,0,0,0,0,6
+2025_10_18_RDPvUAA,UAA,8,Luke Erdman *,3,1,2,3,-0.333,0,0,2,0,0,0,0,0,0,1
+2025_10_18_RDPvUAA,UAA,9,Owen Rasmuson *,3,5,3,10,0.2,0,0,3,0,0,3,0,0,0,8
+2025_10_18_RDPvUAA,UAA,10,Luke Schaefer,1,0,0,2,0,0,0,0,0,1,0,0,0,0,0
+2025_10_18_RDPvUAA,UAA,15,Dawson Sparrow,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025_10_18_RDPvUAA,UAA,16,Caelum Hartman *,3,0,0,2,0,22,0,3,0,4,1,0,0,0,1
+2025_10_18_RDPvUAA,UAA,17,Devon Nazarchuck *,3,10,2,28,0.286,0,0,1,0,5,0,0,0,0,10
+2025_10_18_RDPvUAA,UAA,18,Joel Smith,3,0,0,0,0,1,0,0,0,10,1,0,0,0,1

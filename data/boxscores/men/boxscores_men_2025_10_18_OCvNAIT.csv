@@ -1,0 +1,30 @@
+game_id,team_name,jersey_no,player_name,sets_played,attack_kills,attack_errors,attack_total_attempts,attack_k%,setting_assists,serve_aces,serve_errors,reception_erros,digs,block_single,block_assists,block_errors,ball_handling_errors,
+2025_10_18_OCvNAIT,OC,2,Trysten Kim *,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025_10_18_OCvNAIT,OC,3,Nicolas Hill *,4,10,6,18,0.222,0,5,6,0,1,1,0,0,0,16
+2025_10_18_OCvNAIT,OC,4,Evan Brand,4,0,1,1,-1,5,0,0,0,0,0,0,0,0,0
+2025_10_18_OCvNAIT,OC,6,Sean Finnigan,2,0,1,1,-1,0,0,0,0,0,0,0,0,0,0
+2025_10_18_OCvNAIT,OC,7,Carter Sinclair *,4,3,3,7,0,0,0,2,0,0,1,0,0,0,4
+2025_10_18_OCvNAIT,OC,8,Jack Hudson *,4,0,2,2,-1,2,0,0,1,2,0,0,0,0,0
+2025_10_18_OCvNAIT,OC,9,Devon Sterling *,4,1,8,13,-0.538,3,3,7,1,5,1,0,0,0,5
+2025_10_18_OCvNAIT,OC,10,Jackson Hawkswell *,4,5,0,7,0.714,0,1,1,0,0,5,0,0,0,11
+2025_10_18_OCvNAIT,OC,11,Rowan Irvine,4,1,1,5,0,0,1,1,0,0,0,0,0,0,2
+2025_10_18_OCvNAIT,OC,12,Sean Vanderzee,4,1,1,2,0,19,1,2,0,1,0,0,0,0,2
+2025_10_18_OCvNAIT,OC,13,Logan Kinnear,1,1,0,1,1,0,0,0,0,0,0,0,0,0,1
+2025_10_18_OCvNAIT,OC,14,Victor Reis,4,9,4,19,0.263,0,1,3,1,0,1,0,0,0,11
+2025_10_18_OCvNAIT,OC,16,Braydon Beattie,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025_10_18_OCvNAIT,OC,18,Kieran Neale,3,1,0,1,1,3,2,1,0,0,1,0,0,0,4
+2025_10_18_OCvNAIT,OC,19,Landen Roznowski,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025_10_18_OCvNAIT,NAIT,2,Ben Weiss,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+2025_10_18_OCvNAIT,NAIT,3,Jace Spinney *,4,1,3,5,-0.4,25,0,0,0,5,1,0,0,0,2
+2025_10_18_OCvNAIT,NAIT,4,Jacob Ritz,1,0,0,0,0,0,0,0,0,2,0,0,0,0,0
+2025_10_18_OCvNAIT,NAIT,5,Ben Kieser,3,3,1,4,0.5,0,1,1,0,0,0,0,0,0,4
+2025_10_18_OCvNAIT,NAIT,6,Julien Philips *,4,15,5,21,0.476,3,2,2,0,4,1,0,0,0,18
+2025_10_18_OCvNAIT,NAIT,7,Josh Watson,3,1,1,2,0,0,0,0,1,0,0,0,0,0,1
+2025_10_18_OCvNAIT,NAIT,8,Cole Barlage,4,0,2,3,-0.667,1,0,3,0,1,0,0,0,0,0
+2025_10_18_OCvNAIT,NAIT,9,Kaden Bennett *,4,7,5,15,0.133,3,0,5,5,3,0,0,0,0,7
+2025_10_18_OCvNAIT,NAIT,10,Aiden Wright *,3,2,3,7,-0.143,1,0,1,4,2,0,0,0,0,2
+2025_10_18_OCvNAIT,NAIT,11,Noah Henson,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+2025_10_18_OCvNAIT,NAIT,12,Finn Howard *,2,2,3,5,-0.2,0,0,2,0,0,1,0,0,0,3
+2025_10_18_OCvNAIT,NAIT,14,Carsten Bergeron,3,2,2,4,0,0,0,1,0,0,2,0,0,0,4
+2025_10_18_OCvNAIT,NAIT,15,Koda Dunfield,4,1,0,1,1,0,0,0,1,1,0,0,0,0,1
+2025_10_18_OCvNAIT,NAIT,18,Josh Annett *,2,1,1,2,0,1,0,0,0,0,0,0,0,0,1

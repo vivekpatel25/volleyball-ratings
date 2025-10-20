@@ -1,0 +1,26 @@
+game_id,team_name,jersey_no,player_name,sets_played,attack_kills,attack_errors,attack_total_attempts,attack_k%,setting_assists,serve_aces,serve_errors,reception_erros,digs,block_single,block_assists,block_errors,ball_handling_errors,
+2025_10_17_AMBvTKU,AMB,1,Jeffery Culshaw,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0
+2025_10_17_AMBvTKU,AMB,2,Joshua Aspiras,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025_10_17_AMBvTKU,AMB,3,Kadin Marquez,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025_10_17_AMBvTKU,AMB,4,Noah Verhoef *,4,9,0,0,0,0,1,0,0,9,3,0,0,0,13
+2025_10_17_AMBvTKU,AMB,5,Eamon Broe,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025_10_17_AMBvTKU,AMB,7,Cole Giesbrecht,3,7,0,0,0,0,0,0,0,4,2,0,0,0,9
+2025_10_17_AMBvTKU,AMB,8,Casey Needham,2,0,0,0,0,7,0,0,0,0,0,0,0,0,0
+2025_10_17_AMBvTKU,AMB,9,George Zapach *,4,1,0,0,0,0,0,0,0,1,4,0,0,0,5
+2025_10_17_AMBvTKU,AMB,10,Nathan Lazarenko *,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025_10_17_AMBvTKU,AMB,11,Dane Slater *,4,5,0,0,0,0,0,0,0,3,0,0,0,0,5
+2025_10_17_AMBvTKU,AMB,12,Amir Rezaei *,4,1,0,0,0,18,0,0,0,9,1,0,0,0,2
+2025_10_17_AMBvTKU,AMB,15,Cooper Strachan *,3,2,0,0,0,0,0,0,0,1,2,0,0,0,4
+2025_10_17_AMBvTKU,AMB,16,Kade Miller,4,8,0,0,0,1,1,0,0,2,0,0,0,0,9
+2025_10_17_AMBvTKU,AMB,17,Benjamin Farley,4,0,0,0,0,1,0,0,0,6,0,0,0,0,0
+2025_10_17_AMBvTKU,TKU,1,Dezmond Estrada,4,0,0,0,0,0,0,0,0,5,0,0,0,0,0
+2025_10_17_AMBvTKU,TKU,2,Kaden Tuininga *,4,6,0,0,0,2,0,0,0,5,2,0,0,0,8
+2025_10_17_AMBvTKU,TKU,3,Titus Acson,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025_10_17_AMBvTKU,TKU,4,Tyler Fredlund *,4,7,0,0,0,2,4,0,0,3,0,0,0,0,11
+2025_10_17_AMBvTKU,TKU,5,Dean Larson *,4,2,0,0,0,0,0,0,0,3,0,0,0,0,2
+2025_10_17_AMBvTKU,TKU,6,Jesse McMillan,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025_10_17_AMBvTKU,TKU,7,Brodie Schutz *,4,4,0,0,0,2,1,0,0,1,1,0,0,0,6
+2025_10_17_AMBvTKU,TKU,8,Chad Boelee *,4,2,0,0,0,2,2,0,0,4,0,0,0,0,4
+2025_10_17_AMBvTKU,TKU,13,Ronan Robertson,2,2,0,0,0,0,1,0,0,1,0,0,0,0,3
+2025_10_17_AMBvTKU,TKU,14,Tino Kwatara,1,1,0,0,0,0,0,0,0,0,2,0,0,0,3
+2025_10_17_AMBvTKU,TKU,15,Robert Bugden *,4,1,0,0,0,0,0,0,0,1,2,0,0,0,3
