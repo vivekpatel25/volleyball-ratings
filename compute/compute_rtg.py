@@ -96,24 +96,44 @@ def merge_with_roster(df, roster_path, gender):
     if df.empty:
         return pd.DataFrame()
 
-    try:
-        roster = pd.read_csv(roster_path)
-    except Exception as e:
-        print(f"❌ Error reading roster {roster_path}: {e}")
-        return df
+    def combine_boxscores(folder):
+    """Combine all team boxscores in a folder into season totals."""
+    files = glob(os.path.join(folder, "*.csv"))
+    if not files:
+        print(f"⚠️ No boxscore files found in {folder}")
+        return pd.DataFrame()
 
-    roster = clean_player_names(roster)
+    df_list = []
+    for f in files:
+        try:
+            # Try normal UTF-8 first
+            temp = pd.read_csv(f, encoding="utf-8-sig")
+        except UnicodeDecodeError:
+            # Fallback if weird Excel chars exist
+            temp = pd.read_csv(f, encoding="latin1")
+        except Exception as e:
+            print(f"❌ Error reading {f}: {e}")
+            continue
 
-    merged = df.merge(roster, on=["Player", "Team"], how="left")
+        temp = rename_columns(temp)
+        temp = clean_player_names(temp)
+        df_list.append(temp)
 
-    missing = merged[merged["Player_ID"].isna()][["Player", "Team"]]
-    if not missing.empty:
-        print(f"⚠️ {len(missing)} {gender} players not found in roster:")
-        for _, row in missing.iterrows():
-            print(f"   • {row['Player']} ({row['Team']})")
+    if not df_list:
+        print("⚠️ No valid data after reading boxscores.")
+        return pd.DataFrame()
 
-    return merged
+    df = pd.concat(df_list, ignore_index=True)
 
+    # Convert numeric columns safely
+    num_cols = ["SP","K","E","TA","A","SA","SE","RE","DIGS","BS","BA","BE","BHE"]
+    for col in num_cols:
+        if col in df.columns:
+            df[col] = pd.to_numeric(df[col], errors="coerce").fillna(0)
+
+    # Group by player + team for cumulative totals
+    df = df.groupby(["Player", "Team"], as_index=False).sum(numeric_only=True)
+    return df
 
 # ========== MAIN WORKFLOW ==========
 if __name__ == "__main__":
