@@ -1,0 +1,25 @@
+game_id,team_name,jersey_no,player_name,sets_played,attack_kills,attack_errors,attack_total_attempts,attack_k%,setting_assists,serve_aces,serve_errors,reception_erros,digs,block_single,block_assists,block_errors,ball_handling_errors,points
+2025_10_24_KCvNWP,KC,1,Rafael Parada Lima *,4,12,2,22,0.455,0,1,4,0,10,1,0,0,0,14
+2025_10_24_KCvNWP,KC,2,Kaylen Desmarais-Joseph,4,0,0,0,0,2,0,0,0,10,0,0,0,0,0
+2025_10_24_KCvNWP,KC,3,Arthur Alves Genes Silveira *,4,16,7,32,0.281,2,1,4,0,7,1,0,0,0,18
+2025_10_24_KCvNWP,KC,6,Tim Ebbs *,4,5,1,15,0.267,1,0,5,0,5,2,0,0,0,7
+2025_10_24_KCvNWP,KC,8,Kai Rosnau *,4,4,0,5,0.8,31,2,2,0,8,0,0,0,0,6
+2025_10_24_KCvNWP,KC,9,Noah Rigney *,4,2,2,7,0,0,0,3,0,4,1,0,0,0,3
+2025_10_24_KCvNWP,KC,10,Gage Weinrauch,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025_10_24_KCvNWP,KC,11,Mike Yole,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025_10_24_KCvNWP,KC,14,Jaron Peet,2,0,0,1,0,0,1,0,0,0,0,0,0,0,1
+2025_10_24_KCvNWP,KC,17,Seth Gill,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025_10_24_KCvNWP,KC,18,Logan Boucher *,4,3,0,5,0.6,1,0,2,0,5,2,0,0,0,5
+2025_10_24_KCvNWP,NWP,1,Jeremy Kriletich *,4,12,7,34,0.147,0,0,3,0,8,1,0,0,0,13
+2025_10_24_KCvNWP,NWP,2,Keon Smith,4,0,0,0,0,6,0,0,0,6,0,0,0,0,0
+2025_10_24_KCvNWP,NWP,5,Rylan Young,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025_10_24_KCvNWP,NWP,6,Owen Schmidt,3,0,0,0,0,3,0,0,0,0,0,0,0,0,0
+2025_10_24_KCvNWP,NWP,7,Jeremy Weaver,3,1,0,1,1,0,0,0,0,1,0,0,0,0,1
+2025_10_24_KCvNWP,NWP,10,Josh Dumont *,4,8,1,16,0.438,1,0,4,0,2,2,0,0,0,10
+2025_10_24_KCvNWP,NWP,11,Cooper Paulovich *,4,5,5,13,0,0,1,4,0,2,3,0,0,0,9
+2025_10_24_KCvNWP,NWP,12,Caleb Lockington *,4,5,2,8,0.375,1,1,1,0,2,1,0,0,0,7
+2025_10_24_KCvNWP,NWP,13,Carter Tuttle *,4,3,0,3,1,25,1,1,0,6,0,0,0,0,4
+2025_10_24_KCvNWP,NWP,14,Lincoln Fehr,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0
+2025_10_24_KCvNWP,NWP,15,Justice Bigstone *,4,8,2,15,0.4,0,1,1,0,0,1,0,0,0,10
+2025_10_24_KCvNWP,NWP,16,Jaxon Magnusson,2,0,0,0,0,0,0,1,0,1,0,0,0,0,0
+2025_10_24_KCvNWP,NWP,17,Ben Allard,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0

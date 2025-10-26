@@ -1,0 +1,25 @@
+game_id,team_name,jersey_no,player_name,sets_played,attack_kills,attack_errors,attack_total_attempts,attack_k%,setting_assists,serve_aces,serve_errors,reception_erros,digs,block_single,block_assists,block_errors,ball_handling_errors,points
+2025_10_24_BCvOC,BC,5,Marc Revet *,5,12,0,0,0,3,0,0,0,1,0,0,0,0,12
+2025_10_24_BCvOC,BC,7,Jano Louw *,5,5,0,0,0,36,0,0,0,6,2,0,0,0,7
+2025_10_24_BCvOC,BC,8,Tanner Bean *,2,1,0,0,0,1,0,0,0,0,1,0,0,0,2
+2025_10_24_BCvOC,BC,10,James Reuss,5,11,0,0,0,1,0,0,0,4,1,0,0,0,12
+2025_10_24_BCvOC,BC,12,Eric Meili *,5,10,0,0,0,3,0,0,0,1,1,0,0,0,11
+2025_10_24_BCvOC,BC,13,Josh Dennis *,3,5,0,0,0,0,0,0,0,1,2,0,0,0,7
+2025_10_24_BCvOC,BC,14,Cole Johnson,4,1,0,0,0,0,0,0,0,13,0,0,0,0,1
+2025_10_24_BCvOC,BC,17,Adam Revet,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025_10_24_BCvOC,BC,20,Eli Ulrich *,5,5,0,0,0,0,1,0,0,6,1,0,0,0,7
+2025_10_24_BCvOC,BC,22,Ben Kramer,3,0,0,0,0,0,0,0,0,1,0,0,0,0,0
+2025_10_24_BCvOC,OC,2,Trysten Kim,5,0,0,0,0,0,0,0,0,3,0,0,0,0,0
+2025_10_24_BCvOC,OC,3,Nicolas Hill *,5,6,0,0,0,0,0,0,0,19,1,0,0,0,7
+2025_10_24_BCvOC,OC,4,Evan Brand,3,0,0,0,0,4,0,0,0,1,0,0,0,0,0
+2025_10_24_BCvOC,OC,6,Sean Finnigan *,5,9,0,0,0,0,1,0,0,8,1,0,0,0,11
+2025_10_24_BCvOC,OC,7,Carter Sinclair *,5,8,0,0,0,1,0,0,0,1,5,0,0,0,13
+2025_10_24_BCvOC,OC,8,Jack Hudson,5,0,0,0,0,1,0,0,0,4,0,0,0,0,0
+2025_10_24_BCvOC,OC,9,Devon Sterling,3,1,0,0,0,0,0,0,0,4,0,0,0,0,1
+2025_10_24_BCvOC,OC,10,Jackson Hawkswell *,5,8,0,0,0,1,2,0,0,3,3,0,0,0,13
+2025_10_24_BCvOC,OC,11,Rowan Irvine,4,2,0,0,0,0,0,0,0,0,0,0,0,0,2
+2025_10_24_BCvOC,OC,12,Sean Vanderzee *,3,0,0,0,0,43,0,0,0,8,2,0,0,0,2
+2025_10_24_BCvOC,OC,13,Logan Kinnear,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025_10_24_BCvOC,OC,14,Victor Reis *,5,17,0,0,0,0,2,0,0,9,2,0,0,0,21
+2025_10_24_BCvOC,OC,18,Kieran Neale,5,0,0,0,0,1,0,0,0,1,0,0,0,0,0
+2025_10_24_BCvOC,OC,19,Landen Roznowski,2,1,0,0,0,0,0,0,0,0,0,0,0,0,1

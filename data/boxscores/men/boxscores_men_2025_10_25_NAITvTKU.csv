@@ -1,0 +1,23 @@
+game_id,team_name,jersey_no,player_name,sets_played,attack_kills,attack_errors,attack_total_attempts,attack_k%,setting_assists,serve_aces,serve_errors,reception_erros,digs,block_single,block_assists,block_errors,ball_handling_errors,points
+2025_10_25_NAITvTKU,NAIT,1,Mason Gorski *,4,3,1,4,0.5,36,0,0,0,6,0,0,0,0,3
+2025_10_25_NAITvTKU,NAIT,2,Ben Weiss,3,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+2025_10_25_NAITvTKU,NAIT,3,Jace Spinney,3,0,0,2,0,10,0,0,0,2,0,0,0,0,0
+2025_10_25_NAITvTKU,NAIT,5,Ben Kieser *,3,7,3,14,0.286,0,0,5,0,0,1,0,0,0,8
+2025_10_25_NAITvTKU,NAIT,6,Julien Phillips *,4,8,6,27,0.074,0,0,5,0,5,4,0,0,0,12
+2025_10_25_NAITvTKU,NAIT,8,Cole Barlage *,4,6,1,12,0.417,0,0,0,0,4,1,0,0,0,7
+2025_10_25_NAITvTKU,NAIT,9,Kaden Bennett *,5,6,2,18,0.222,0,1,3,0,7,0,0,0,0,7
+2025_10_25_NAITvTKU,NAIT,10,Aiden Wright,3,4,1,6,0.5,1,0,1,0,5,1,0,0,0,5
+2025_10_25_NAITvTKU,NAIT,11,Noah Henson,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025_10_25_NAITvTKU,NAIT,12,Finn Howard *,5,15,4,27,0.407,0,0,2,0,5,4,0,0,0,19
+2025_10_25_NAITvTKU,NAIT,14,Carsten Bergeron,3,5,2,10,0.3,0,0,1,0,2,0,0,0,0,5
+2025_10_25_NAITvTKU,NAIT,15,Koda Dunfield,3,0,0,0,0,0,0,0,0,4,0,0,0,0,0
+2025_10_25_NAITvTKU,NAIT,16,Emmett Neuls,2,0,0,0,0,1,0,0,0,5,0,0,0,0,0
+2025_10_25_NAITvTKU,TKU,2,Kaden Tuininga *,5,16,5,30,0.367,2,0,1,0,7,0,0,0,0,16
+2025_10_25_NAITvTKU,TKU,3,Titus Acson *,5,17,5,36,0.333,2,2,2,0,8,1,0,0,0,20
+2025_10_25_NAITvTKU,TKU,4,Tyler Fredlund *,5,6,8,23,-0.087,0,1,1,0,3,1,0,0,0,8
+2025_10_25_NAITvTKU,TKU,7,Brodie Schutz *,5,6,3,12,0.25,1,4,0,0,2,1,0,0,0,11
+2025_10_25_NAITvTKU,TKU,8,Chad Boelee *,5,3,1,4,0.5,44,0,4,0,4,0,0,0,0,3
+2025_10_25_NAITvTKU,TKU,9,Tanner Johnson,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025_10_25_NAITvTKU,TKU,12,Anders Gabler *,5,2,3,6,-0.167,0,1,3,0,1,1,0,0,0,4
+2025_10_25_NAITvTKU,TKU,13,Ronan Robertson,5,0,0,0,0,0,0,0,0,12,0,0,0,0,0
+2025_10_25_NAITvTKU,TKU,14,Tino Kwatara,3,6,3,11,0.273,0,0,1,0,0,1,0,0,0,7
