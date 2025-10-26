@@ -49,15 +49,30 @@ def clean_player_names(df):
 
 def compute_ratings(df):
     """Compute O-Rtg, D-Rtg, and T-Rtg for each player."""
-    df["O-Rtg"] = ((df["K"] - df["E"]) +
-                   (df["SA"] - df["SE"]) +
-                   (df["A"] * 0.3)) / df["SP"]
 
-    df["D-Rtg"] = ((df["DIGS"] * 0.5) +
-                   (df["BS"] + 0.5 * df["BA"]) -
-                   (df["BE"] + df["RE"])) / df["SP"]
+    # --- Total points scored by player ---
+    # Kills + Serve Aces + Block Solos + 0.5 × Block Assists
+    df["PTS"] = df["K"] + df["SA"] + df["BS"] + (0.5 * df["BA"])
 
+    # --- Offensive Rating (O-Rtg) ---
+    # Total scoring minus attack & serve errors + small assist weight
+    df["O-Rtg"] = (
+        (df["PTS"] - df["E"] - df["SE"]) + (df["A"] * 0.1)
+    ) / df["SP"]
+
+    # --- Defensive Rating (D-Rtg) ---
+    # Digs + Blocks minus reception & block errors
+    df["D-Rtg"] = (
+        (df["DIGS"] * 0.5)
+        + (df["BS"] + 0.5 * df["BA"])
+        - (df["BE"] + df["RE"])
+    ) / df["SP"]
+
+    # --- Total Rating (T-Rtg) ---
     df["T-Rtg"] = df["O-Rtg"] + df["D-Rtg"]
+
+    # Round for neatness
+    df[["O-Rtg", "D-Rtg", "T-Rtg"]] = df[["O-Rtg", "D-Rtg", "T-Rtg"]].round(2)
     return df
 
 
