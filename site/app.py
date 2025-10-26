@@ -64,7 +64,8 @@ let sortDirections = {};
 function sortTable(n) {
   const table = event.target.closest("table");
   const tbody = table.querySelector("tbody");
-  const rows = Array.from(tbody.querySelectorAll("tr"));
+  const rows = Array.from(tbody.querySelectorAll("tr")).filter(r => !r.classList.contains("divider"));
+  const divider = tbody.querySelector(".divider");
   const currentDir = sortDirections[n] || "desc";
   const newDir = currentDir === "asc" ? "desc" : "asc";
   sortDirections[n] = newDir;
@@ -81,7 +82,13 @@ function sortTable(n) {
       ? aText.localeCompare(bText)
       : bText.localeCompare(aText);
   });
-  rows.forEach(r => tbody.appendChild(r));
+
+  // re-append sorted rows, keep divider fixed
+  tbody.innerHTML = "";
+  rows.forEach((r, i) => {
+    tbody.appendChild(r);
+    if (i === 19 && divider) tbody.appendChild(divider);
+  });
 }
 </script>
 """
@@ -115,7 +122,6 @@ def render_table(df):
         <thead><tr style="background:{header_bg};color:{text_color};">
     """
     for i, col in enumerate(headers):
-        # Only SP, O-Rtg, D-Rtg, T-Rtg sortable
         cursor = "pointer" if col in ["SP", "O-Rtg", "D-Rtg", "T-Rtg"] else "default"
         html += (
             f"<th onclick='sortTable({i})' style='border:1px solid {border_color};white-space:nowrap;"
@@ -138,7 +144,6 @@ def render_table(df):
             elif c == "T-Rtg":
                 intensity = row.get("_T-Rtg_norm", 0)
                 bg = f"rgba(0,0,255,{0.15 + 0.75*intensity})"
-
             weight = "bold" if c == "T-Rtg" else "normal"
             html += (
                 f"<td style='border:1px solid {border_color};text-align:center;white-space:nowrap;"
@@ -146,9 +151,9 @@ def render_table(df):
                 f"{row.get(c,'')}</td>"
             )
         html += "</tr>"
-        # Add dark separator after top 20
+        # static divider once after 20th
         if idx == 19:
-            html += f"<tr><td colspan='{len(headers)}' style='border-top:4px solid {border_color};'></td></tr>"
+            html += f"<tr class='divider'><td colspan='{len(headers)}' style='border-top:4px solid {border_color};'></td></tr>"
 
     html += "</tbody></table></div>"
     return html + SORT_SCRIPT
@@ -175,11 +180,9 @@ for tab, gender in zip(tabs, ["men", "women"]):
 
         keep = [c for c in ["Jersey","Player","Team","SP","O-Rtg","D-Rtg","T-Rtg"] if c in df.columns]
         df = df[keep].copy()
-
         for c in ["O-Rtg","D-Rtg","T-Rtg"]:
             if c in df.columns:
                 df[c] = pd.to_numeric(df[c], errors="coerce").round(2)
-
         if "T-Rtg" in df.columns:
             df = df.sort_values("T-Rtg", ascending=False).reset_index(drop=True)
 
@@ -189,11 +192,11 @@ for tab, gender in zip(tabs, ["men", "women"]):
         st.markdown("""
         <div style="background-color:#f0f4ff;border-left:6px solid #0066cc;
                     padding:10px 15px;border-radius:6px;margin-bottom:1rem;">
-        🟦 <b>Note:</b> Players above the dark horizontal line represent the current <b>Top 20 in T-Rtg</b>.
+        🟦 <b>Note:</b> The <b>Top 20 players</b> are displayed above the dark horizontal line.
         </div>
         """, unsafe_allow_html=True)
 
-        components.html(render_table(df), height=len(df)*38 + 100, scrolling=False)
+        components.html(render_table(df), height=len(df)*38 + 120, scrolling=False)
 
 # ---------- FOOTER ----------
 st.markdown("""
