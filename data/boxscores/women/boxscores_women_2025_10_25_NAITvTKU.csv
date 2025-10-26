@@ -1,0 +1,19 @@
+game_id,team_name,jersey_no,player_name,sets_played,attack_kills,attack_errors,attack_total_attempts,attack_k%,setting_assists,serve_aces,serve_errors,reception_erros,digs,block_single,block_assists,block_errors,ball_handling_errors,points
+2025_10_25_NAITvTKU,NAIT,1,Madge Prince *,3,4,2,11,0.182,0,0,3,0,1,0,0,0,0,4
+2025_10_25_NAITvTKU,NAIT,5,Rachel Mallett *,3,22,4,40,0.45,0,0,4,0,12,0,0,0,0,22
+2025_10_25_NAITvTKU,NAIT,8,Racquel Lussier,3,0,0,0,0,3,0,0,0,21,0,0,0,0,0
+2025_10_25_NAITvTKU,NAIT,9,Lexi Gedny *,3,0,0,0,0,37,0,1,0,9,0,0,0,0,0
+2025_10_25_NAITvTKU,NAIT,11,Katie Nashim *,3,12,3,37,0.243,0,0,2,0,5,0,0,1,0,12
+2025_10_25_NAITvTKU,NAIT,12,Tanisha McQueen *,3,3,0,8,0.375,0,0,3,0,4,0,0,0,0,3
+2025_10_25_NAITvTKU,NAIT,14,Emma Buyar,1,0,0,1,0,0,0,0,0,1,0,0,0,0,0
+2025_10_25_NAITvTKU,NAIT,18,Ashley Wiesener *,3,3,2,5,0.2,0,1,1,0,4,0,0,0,0,4
+2025_10_25_NAITvTKU,TKU,1,Kadison McLeod *,3,5,3,18,0.111,1,1,1,0,3,0,0,0,0,6
+2025_10_25_NAITvTKU,TKU,2,Samantha Langdon *,3,10,5,39,0.128,0,0,2,0,7,0,0,0,0,10
+2025_10_25_NAITvTKU,TKU,4,Leah Aukema *,3,1,0,3,0.333,17,0,2,0,0,0,0,1,0,1
+2025_10_25_NAITvTKU,TKU,5,Lacey Saville,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025_10_25_NAITvTKU,TKU,6,Grace Reist,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025_10_25_NAITvTKU,TKU,10,Lilly Daviss,3,0,0,0,0,0,0,0,0,2,0,0,0,0,0
+2025_10_25_NAITvTKU,TKU,12,Emma Scheerle *,3,1,1,7,0,0,0,1,0,3,0,0,0,0,1
+2025_10_25_NAITvTKU,TKU,13,Chenee Lehman,3,0,0,0,0,1,0,0,0,16,0,0,0,0,0
+2025_10_25_NAITvTKU,TKU,15,Jensyn Brydon *,3,2,6,23,-0.174,0,1,1,0,6,0,0,0,0,3
+2025_10_25_NAITvTKU,TKU,22,Emma Laybourne *,3,3,3,7,0,1,0,0,0,1,0,0,0,0,3

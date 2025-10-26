@@ -1,0 +1,22 @@
+game_id,team_name,jersey_no,player_name,sets_played,attack_kills,attack_errors,attack_total_attempts,attack_k%,setting_assists,serve_aces,serve_errors,reception_erros,digs,block_single,block_assists,block_errors,ball_handling_errors,points
+2025_10_24_TKUvNAIT,TKU,1,Kadison McLeod *,3,1,3,11,-0.182,0,1,1,1,4,0,0,0,0,2
+2025_10_24_TKUvNAIT,TKU,2,Samantha Langdon *,3,8,6,33,0.061,0,0,0,0,7,1,0,0,0,9
+2025_10_24_TKUvNAIT,TKU,3,Julie Doef,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+2025_10_24_TKUvNAIT,TKU,4,Leah Aukema *,3,0,0,3,0,12,1,0,0,5,0,0,0,0,1
+2025_10_24_TKUvNAIT,TKU,5,Lacey Saville *,2,1,2,5,-0.2,0,0,0,0,0,0,0,0,0,1
+2025_10_24_TKUvNAIT,TKU,7,Kate Hovius,1,0,1,1,-1,0,0,0,0,0,0,0,0,0,0
+2025_10_24_TKUvNAIT,TKU,9,Morgan Maclean,3,0,1,3,-0.333,0,0,0,0,3,0,0,0,0,0
+2025_10_24_TKUvNAIT,TKU,10,Lilly Daviss,2,0,0,0,0,1,0,0,0,4,0,0,0,0,0
+2025_10_24_TKUvNAIT,TKU,11,Katie Hadwin,2,0,1,7,-0.143,0,0,1,1,0,0,0,0,0,0
+2025_10_24_TKUvNAIT,TKU,12,Emma Scheerle *,3,2,0,3,0.667,0,0,1,0,1,0,0,0,0,2
+2025_10_24_TKUvNAIT,TKU,13,Chenee Lehman,3,0,0,1,0,1,0,0,3,4,0,0,0,0,0
+2025_10_24_TKUvNAIT,TKU,15,Jensyn Brydon *,2,1,7,13,-0.462,0,0,0,1,4,0,0,0,0,1
+2025_10_24_TKUvNAIT,TKU,22,Emma Laybourne,2,2,3,7,-0.143,0,0,0,0,1,0,0,0,0,2
+2025_10_24_TKUvNAIT,NAIT,1,Madge Prince *,3,3,1,10,0.2,1,0,0,0,3,2,0,0,0,5
+2025_10_24_TKUvNAIT,NAIT,5,Rachel Mallett *,3,13,2,25,0.44,1,1,2,0,7,0,0,0,0,14
+2025_10_24_TKUvNAIT,NAIT,8,Racquel Lussier,3,0,0,0,0,4,0,0,0,11,0,0,0,0,0
+2025_10_24_TKUvNAIT,NAIT,9,Lexi Gedny *,3,2,0,5,0.4,28,3,1,0,9,1,0,0,0,6
+2025_10_24_TKUvNAIT,NAIT,11,Katie Nashim *,3,10,7,32,0.094,1,0,3,1,4,2,0,0,0,12
+2025_10_24_TKUvNAIT,NAIT,12,Tanisha McQueen *,3,9,1,11,0.727,1,1,0,0,3,2,0,0,0,12
+2025_10_24_TKUvNAIT,NAIT,14,Emma Buyar,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0
+2025_10_24_TKUvNAIT,NAIT,18,Ashley Wiesener *,3,3,1,8,0.25,0,3,2,0,5,0,0,0,0,6

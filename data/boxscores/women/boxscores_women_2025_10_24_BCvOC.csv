@@ -1,0 +1,23 @@
+game_id,team_name,jersey_no,player_name,sets_played,attack_kills,attack_errors,attack_total_attempts,attack_k%,setting_assists,serve_aces,serve_errors,reception_erros,digs,block_single,block_assists,block_errors,ball_handling_errors,points
+2025_10_24_BCvOC,BC,2,Brynn Hardy *,3,1,0,0,0,0,0,0,0,7,0,0,0,0,1
+2025_10_24_BCvOC,BC,3,Kacey Dale *,3,8,0,0,0,0,1,0,0,6,0,0,0,0,9
+2025_10_24_BCvOC,BC,4,Brooklyn Houde *,3,5,0,0,0,1,0,0,0,4,0,0,0,0,5
+2025_10_24_BCvOC,BC,6,Zoe Schwindt,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025_10_24_BCvOC,BC,10,Rachel Stead *,3,8,0,0,0,0,1,0,0,4,6,0,0,0,15
+2025_10_24_BCvOC,BC,14,Marie Tsougrianis,3,5,0,0,0,0,5,0,0,5,0,0,0,0,10
+2025_10_24_BCvOC,BC,15,Abby Ulrich *,3,2,0,0,0,23,1,0,0,3,1,0,0,0,4
+2025_10_24_BCvOC,BC,17,Alyssa Revet,2,0,0,0,0,0,0,0,0,1,0,0,0,0,0
+2025_10_24_BCvOC,BC,18,Mya Peterson *,3,2,0,0,0,0,2,0,0,0,0,0,0,0,4
+2025_10_24_BCvOC,OC,1,Hannah Stewart *,3,3,0,0,0,0,0,0,0,4,0,0,0,0,3
+2025_10_24_BCvOC,OC,2,Lisa Buchard *,3,5,0,0,0,0,0,0,0,2,1,0,0,0,6
+2025_10_24_BCvOC,OC,3,Kennedy Paget,2,2,0,0,0,0,0,0,0,7,0,0,0,0,2
+2025_10_24_BCvOC,OC,6,Hayden gervais *,3,0,0,0,0,11,2,0,0,4,0,0,0,0,2
+2025_10_24_BCvOC,OC,8,Paisley Bamford,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025_10_24_BCvOC,OC,9,Ella Kivi,2,1,0,0,0,4,1,0,0,2,0,0,0,0,2
+2025_10_24_BCvOC,OC,10,Raya Jorgensen *,2,0,0,0,0,0,1,0,0,2,0,0,0,0,1
+2025_10_24_BCvOC,OC,12,Faith Buffalo *,3,2,0,0,0,1,1,0,0,0,0,0,0,0,3
+2025_10_24_BCvOC,OC,13,Kalyna Bahler,3,0,0,0,0,2,0,0,0,16,0,0,0,0,0
+2025_10_24_BCvOC,OC,14,Jett MacDonald,2,2,0,0,0,0,1,0,0,3,0,0,0,0,3
+2025_10_24_BCvOC,OC,15,Camryn McDougald,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0
+2025_10_24_BCvOC,OC,16,Lexi Lafreniere *,3,7,0,0,0,1,0,0,0,8,1,0,0,0,8
+2025_10_24_BCvOC,OC,18,Andrea Geraghty,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0

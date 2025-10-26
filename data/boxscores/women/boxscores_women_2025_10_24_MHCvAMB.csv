@@ -1,0 +1,21 @@
+game_id,team_name,jersey_no,player_name,sets_played,attack_kills,attack_errors,attack_total_attempts,attack_k%,setting_assists,serve_aces,serve_errors,reception_erros,digs,block_single,block_assists,block_errors,ball_handling_errors,points
+2025_10_24_MHCvAMB,MHC,2,Zoe Fussell *,2,0,0,0,0,14,0,1,0,4,1,0,0,0,1
+2025_10_24_MHCvAMB,MHC,3,Mya Lawrence,3,0,0,0,0,0,0,0,0,3,0,0,0,0,0
+2025_10_24_MHCvAMB,MHC,5,Fayth Spencer *,4,10,3,20,0.35,0,0,1,0,2,1,0,0,0,11
+2025_10_24_MHCvAMB,MHC,6,Carly Penner,2,0,0,1,0,15,0,2,0,2,0,0,0,0,0
+2025_10_24_MHCvAMB,MHC,7,Haylee Fleck *,4,5,4,20,0.05,0,0,0,0,9,1,0,0,0,6
+2025_10_24_MHCvAMB,MHC,8,Jaivyn Barabe *,4,3,5,20,-0.1,0,2,1,0,1,2,0,0,0,7
+2025_10_24_MHCvAMB,MHC,9,Cianna Chalack,4,0,0,0,0,1,0,0,0,16,0,0,0,0,0
+2025_10_24_MHCvAMB,MHC,10,Ashley Morrison,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2025_10_24_MHCvAMB,MHC,11,Taylor Rosenau *,4,5,1,12,0.333,0,0,3,0,1,2,0,0,0,7
+2025_10_24_MHCvAMB,MHC,13,Tannah McKay *,4,10,3,31,0.226,0,0,1,0,8,1,0,0,0,11
+2025_10_24_MHCvAMB,MHC,18,Christina Semple,1,1,0,2,0.5,0,0,1,0,1,0,0,0,0,1
+2025_10_24_MHCvAMB,AMB,2,Taylor Hart *,4,10,4,26,0.231,0,1,1,0,9,1,0,0,0,12
+2025_10_24_MHCvAMB,AMB,3,Ashlyn Zylstra,3,3,0,4,0.75,0,1,3,0,0,0,0,0,0,4
+2025_10_24_MHCvAMB,AMB,8,Macie Kehler *,4,6,1,13,0.385,0,1,5,0,0,4,0,0,0,11
+2025_10_24_MHCvAMB,AMB,9,Brooklyn Deol *,4,13,0,17,0.765,0,1,3,0,1,2,0,0,0,16
+2025_10_24_MHCvAMB,AMB,12,Kya Wildeman,1,0,2,2,-1,0,0,0,0,1,0,0,0,0,0
+2025_10_24_MHCvAMB,AMB,13,Elise Wagner *,4,14,5,33,0.273,0,0,1,0,10,0,0,0,0,14
+2025_10_24_MHCvAMB,AMB,15,Emilie Pregal,4,0,0,0,0,1,0,0,0,10,0,0,0,0,0
+2025_10_24_MHCvAMB,AMB,16,Rachel Barg *,4,1,0,1,1,52,0,1,0,9,1,0,0,0,2
+2025_10_24_MHCvAMB,AMB,18,Alyvia Williams *,3,6,5,24,0.042,0,0,1,0,9,2,0,0,0,8
