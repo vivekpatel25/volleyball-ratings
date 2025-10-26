@@ -125,7 +125,7 @@ def render_table(df):
         )
     html += "</tr></thead><tbody>"
 
-    for _, row in df.iterrows():
+    for idx, row in df.iterrows():
         html += f"<tr onmouseover=\"this.style.background='{row_hover}'\" onmouseout=\"this.style.background='transparent'\">"
         for c in headers:
             bg = "transparent"
@@ -146,6 +146,10 @@ def render_table(df):
                 f"{row.get(c,'')}</td>"
             )
         html += "</tr>"
+        # Add dark separator after top 20
+        if idx == 19:
+            html += f"<tr><td colspan='{len(headers)}' style='border-top:4px solid {border_color};'></td></tr>"
+
     html += "</tbody></table></div>"
     return html + SORT_SCRIPT
 
@@ -175,11 +179,20 @@ for tab, gender in zip(tabs, ["men", "women"]):
         for c in ["O-Rtg","D-Rtg","T-Rtg"]:
             if c in df.columns:
                 df[c] = pd.to_numeric(df[c], errors="coerce").round(2)
-        if "T-Rtg" in df.columns:
-            df = df.sort_values("T-Rtg", ascending=False).head(20)
 
-        st.subheader(f"🏐 ACAC {gender.capitalize()} Leaderboard — Top 20")
+        if "T-Rtg" in df.columns:
+            df = df.sort_values("T-Rtg", ascending=False).reset_index(drop=True)
+
+        st.subheader(f"🏐 ACAC {gender.capitalize()} Leaderboard — Full Table")
         st.caption("Click **SP**, **O-Rtg**, **D-Rtg**, or **T-Rtg** to sort.")
+
+        st.markdown("""
+        <div style="background-color:#f0f4ff;border-left:6px solid #0066cc;
+                    padding:10px 15px;border-radius:6px;margin-bottom:1rem;">
+        🟦 <b>Note:</b> Players above the dark horizontal line represent the current <b>Top 20 in T-Rtg</b>.
+        </div>
+        """, unsafe_allow_html=True)
+
         components.html(render_table(df), height=len(df)*38 + 100, scrolling=False)
 
 # ---------- FOOTER ----------
