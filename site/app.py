@@ -189,13 +189,19 @@ for tab, gender in zip(tabs, ["men", "women"]):
         st.subheader(f"🏐 ACAC {gender.capitalize()} Leaderboard — Full Table")
         st.caption("Click **SP**, **O-Rtg**, **D-Rtg**, or **T-Rtg** to sort.")
 
-        st.markdown("""
-        <div style="background-color:#f0f4ff;border-left:6px solid #0066cc;
-                    padding:10px 15px;border-radius:6px;margin-bottom:1rem;">
-        🟦 <b>Note:</b> The <b>Top 20 players</b> are displayed above the dark horizontal line.
+        # --- Note box (auto adapts to theme) ---
+        dark_mode = st.get_option("theme.base") == "dark"
+        note_bg = "#1e1e1e" if dark_mode else "#f0f4ff"
+        note_text = "#e0e0e0" if dark_mode else "#000"
+        note_border = "#3399ff" if dark_mode else "#0066cc"
+
+        st.markdown(f"""
+        <div style="background-color:{note_bg};border-left:6px solid {note_border};
+            padding:10px 15px;border-radius:6px;margin-bottom:1rem;
+            color:{note_text};font-size:0.95rem;">
+        <b>🟦 Note:</b> The <b>Top 20 players</b> are displayed above the dark horizontal line.
         </div>
         """, unsafe_allow_html=True)
-
         components.html(render_table(df), height=len(df)*38 + 120, scrolling=False)
 
 # ---------- FOOTER ----------
